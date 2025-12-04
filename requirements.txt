@@ -1,0 +1,8 @@
+decord==0.6.0
+ffmpeg-python==0.2
+nncore==0.4.4
+scikit-learn==1.4.1.post1
+torch==2.2.1
+torchvision==0.17.1
+numpy==1.26.1
+# python==3.12
