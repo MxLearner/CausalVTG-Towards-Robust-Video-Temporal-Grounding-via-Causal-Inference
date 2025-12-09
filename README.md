@@ -8,20 +8,20 @@
 
 ## 📑 Table of Contents
 
-- [Overview](#-overview)
-- [Installation](#-installation)
-- [Dataset](#-dataset)
-- [Training](#-training)
-- [Evaluation](#-evaluation)
-- [Model Zoo](#-model-zoo)
-- [Citation](#-citation)
-- [Acknowledgement](#-acknowledgement)
+- [Overview](#overview)
+- [Installation](#installation)
+- [Dataset](#dataset)
+- [Training](#training)
+- [Evaluation](#evaluation)
+- [Model Zoo](#model-zoo)
+- [Citation](#citation)
+- [Acknowledgement](#acknowledgement)
 
-## 📝 Overview
+## <a id="overview"></a>📝 Overview
 
 Official implementation of **CausalVTG: Towards Robust Video Temporal Grounding via Causal Inference** (NeurIPS 2025).
 
-## ⚙️ Installation
+## <a id="installation"></a>⚙️ Installation
 
 **Environment:**
 - Python 3.12
@@ -36,7 +36,7 @@ conda activate causalvtg
 pip install -r requirements.txt
 ```
 
-## 📂 Dataset
+## <a id="dataset"></a>📂 Dataset
 
 **Feature Downloads:**
 - CLIP & SlowFast: [Lighthouse](https://github.com/line/lighthouse?tab=readme-ov-file#datasets-1)
@@ -75,7 +75,7 @@ features/
 
 </details>
 
-## 🚀 Training
+## <a id="training"></a>🚀 Training
 
 ### **Step 1: Build Global Dictionary** (skip if resuming from checkpoint)
 
@@ -130,7 +130,7 @@ python tools/launch.py --config <path-to-config>
 
 </details>
 
-## 📊 Evaluation
+## <a id="evaluation"></a>📊 Evaluation
 
 ```bash
 python tools/launch.py <path-to-config> --checkpoint <path-to-checkpoint> --eval
@@ -144,7 +144,7 @@ python tools/launch.py <path-to-config> --checkpoint <path-to-checkpoint> --dump
 
 Submit `hl_{val,test}_submission.jsonl` to [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/6937).
 
-## 🗃️ Model Zoo
+## <a id="model-zoo"></a>🗃️ Model Zoo
 
 ### Standard Benchmarks
 
@@ -253,7 +253,7 @@ Submit `hl_{val,test}_submission.jsonl` to [CodaLab](https://codalab.lisn.upsacl
   </tr>
 </table>
 
-## 📌 Citation
+## <a id="citation"></a>📌 Citation
 
 ```bibtex
 @inproceedings{wangcausalvtg,
@@ -263,7 +263,7 @@ Submit `hl_{val,test}_submission.jsonl` to [CodaLab](https://codalab.lisn.upsacl
 }
 ```
 
-## 🙏 Acknowledgement
+## <a id="acknowledgement"></a>🙏 Acknowledgement
 
 We thank the authors of the following projects:
 
